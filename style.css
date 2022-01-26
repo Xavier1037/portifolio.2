@@ -267,6 +267,7 @@ a:hover{
     cursor: pointer;
     perspective: 1000px;
     position: relative;
+    text-align: center;
 }
 
 .mini-projeto:hover .img-projeto{
