@@ -173,12 +173,11 @@ a:hover{
 
 /*---------------------LIST-SKILLS---------------------*/
 
-
 .list-skills{
     margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
-    gap: 100px;
+    gap:20px;
 }
 
 .colum1{
