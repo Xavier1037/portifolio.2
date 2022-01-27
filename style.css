@@ -177,7 +177,7 @@ a:hover{
     margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
-    gap:20px;
+    
 }
 
 .colum1{
@@ -186,6 +186,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0 20px;
 }
 .colum2{
     display: flex;
@@ -193,6 +194,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0 20px;
 }
 
 .icons-skills{
