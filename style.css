@@ -21,7 +21,6 @@ html,body{
 
 a{
     text-decoration: none;
-    color:black;
     font-family: sans-serif;
 }
 
@@ -524,6 +523,7 @@ form{
 /*--------------------Mneu------------------------*/
     .btn-mobile{
         display:block;
+        color:white;
     }
 
     .menu{
@@ -532,12 +532,13 @@ form{
         width: 100%;
         top:70px;
         right:0px;
-        background:#e7e7e7;
+        background:#5390D9;
         transition:.6s;
         z-index:1000;
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
+        
     }
 
     .nav.active .menu{
@@ -549,6 +550,7 @@ form{
     .menu a{
         padding: 1rem 0;
         margin:0 1rem;
+        color:white;
         border-bottom: 2px solid rgb(0,0,0,.05);
     }
 
