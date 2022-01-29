@@ -202,18 +202,33 @@ a:hover{
     max-height: 400px;
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
+.icons-skills i{
+    font-size: 100px;
+    padding: 0 15px;
+}
 
-.icons{
-    max-width: 100px;
-    max-height: 100px;
-    width: 100%;
-    height: 100%;
+.html5{
+    color:#d94924
+}
+.css3{
+    color:#004ce8;
+}
+.javascript{
+    color:#e4ba42;
+}
+.nodejs{
+    color:#3f883f;
+}
+.mysql{
+    color:#3f5c6c;
+}
+.firebase{
+    color:#f0c419;
 }
 
 .barra-skills{
