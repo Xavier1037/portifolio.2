@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-    <link href="/slick.css" rel="stylesheet"/>
-    <link href="/style.css" rel="stylesheet"/>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="shortcut icon" href="/form-icon.ico" type="image/x-icon">
     <title>Portfólio</title>
@@ -38,13 +38,15 @@
 
     <section class="container section-2" >
         <div class="banner">
-            <div class="box box2"><!--box box2-->
-                <h2>Evanderson Xavier</h2>
-                <h3>FrontEnd Developer</h3>
-            </div>
-            <h2>Evanderson Xavier</h2>
-            <h4>FrontEnd Developer</h4>
-            <div class="img-perfil"><img src="/perfil.jpeg" alt="foto-perfil"></div><!--img-perfil-->
+            <div class="box box2">
+                <h2>FrontEnd Developer</h2>
+                <h3>Evanderson Xavier</h3>
+                <div class="box-botoon">
+                <a href="#sobre"><button class="button-sobre">sobre</button></a>
+                <a href="./css/img/downloadpdf.pdf" download><button class="button-download">Dowload</button></a>
+                </div>
+            </div><!--box box2-->
+            <div class="img-perfil"><img src="./css/img/perfil.jpeg" alt="foto-perfil"></div><!--img-perfil-->
         </div><!--banner-->
     </section><!--container section-2-->
 
@@ -113,7 +115,7 @@
             <div class="mini-projeto">
                 <div class="img-projeto">
                     <div class="front">
-                        <img src="/site2.png" />
+                        <img src="./css/img/site2.png" />
                       </div><!--front-->
                       <div class="back"><h2>
                         <img style="background-color: #ccc;"src="" />
@@ -125,7 +127,7 @@
             <div class="mini-projeto">
                 <div class="img-projeto">
                     <div class="front">
-                        <img src="/site3.png" />
+                        <img src="./css/img/site3.png" />
                       </div><!--front-->
                       <div class="back"><h2>
                         
@@ -137,7 +139,7 @@
             <div class="mini-projeto">
                 <div class="img-projeto">
                     <div class="front">
-                        <img src="/site4.png" />
+                        <img src="./css/img/site4.png" />
                       </div><!--front-->
                       <div class="back"><h2>
                         <img style="background-color: #ccc;"src="" />
@@ -166,7 +168,7 @@
                         <img style="background-color: #ccc;"src="" />
                       </div><!--front-->
                       <div class="back">
-                        <img src="/back.jpeg" />
+                        <img src="./css/img/back.jpeg" />
                         <h2>
                         
                       </h2>
@@ -194,21 +196,23 @@
            
             <h2>Contato</h2>
         </div><!--line-titulo-->
-        <form class="form-cadastro-tarefa">
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form-cadastro-tarefa">
+            <input type="hidden" name="accessKey" value="bf3c8aff-ae22-4f5d-bbaf-a441e2040373">
+            <input type="hidden" name="redirectTo" value="https://portifolio-2-delta.vercel.app/">
             <div class="form-wraper w100">
                 <span>Nome:</span>
-                <input id="name" placeholder="*Nome" name="nome" type="text" />
+                <input  placeholder="*Nome" name="name" type="text" />
             </div><!--form-wraper w100-->
             <div class="form-wraper w50">
                 <span>E-mail:</span>
-                <input id="email" placeholder="*Email" name="email" type="text">
+                <input  placeholder="*Email" name="email" type="text">
             </div><!--form-wraper w50-->
             <div class="form-wraper w100">
                 <span>mensagem:</span>
-                <textarea></textarea>
+                <textarea name="message"></textarea>
             </div><!--form-wraper w100-->
             <div class="form-wraper w100" style="text-align: center;">
-            <input id="submit-button" type="submit" name="acao" value="Enviar">
+            <input type="submit" value="Submit">
             </div><!--form-wraper w100 (Buttom de Enviar)-->
             <div class="clear"></div><!--clear-->
         </form>
@@ -219,27 +223,27 @@
     <footer class="container footer">
         <div class="footer1">
            <div class="icons-footer">
-            <a href="https://www.instagram.com/xavier00110001/?hl=pt-br"><img src="/instagram.png" alt="icon-instagram"></a>
+            <a href="https://www.instagram.com/xavier00110001/?hl=pt-br"><img src="./css/img/instagram.png" alt="icon-instagram"></a>
             <a href="https://www.instagram.com/xavier00110001/?hl=pt-br">Instagram</a>
            </div><!--icons-footer-->
            <div class="icons-footer">
-            <img src="/gmail.png" alt="gmail">
+            <img src="./css/img/gmail.png" alt="gmail">
             <p>Email:evandersonxavier05@gmail.com</p>
            </div><!--icons-footer-->
            <div class="icons-footer">
-            <a href="https://github.com/Xavier1037"><img src="/github.png" alt="github"></a>
+            <a href="https://github.com/Xavier1037"><img src="./css/img/github.png" alt="github"></a>
             <a href="https://github.com/Xavier1037">GitHub</a>
            </div><!--icons-footer-->
         </div><!--footer1-->
     </footer><!--container footer-->
     
-    <script src="/jquery.js"></script>
-    <script src="/mobileMenu.js"></script>
-    <script src="/slick.min.js" ></script>
-    <script src="/slick.js" ></script>
-    <script src="/slider.js" ></script>
-    <script src="/scrollpage.js"></script>
-    <script src="/formulario.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/mobileMenu.js"></script>
+    <script src="./js/slick.min.js" ></script>
+    <script src="./js/slick.js" ></script>
+    <script src="./js/slider.js" ></script>
+    <script src="./js/scrollpage.js"></script>
+    <script src="./js/formulario.js"></script>
 
 </body>
 </html>
